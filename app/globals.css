@@ -1,26 +1,56 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand-blue-50: #E7F6FF;
+  --color-brand-blue-100: #D3EEFF;
+  --color-brand-blue-200: #B0DDFF;
+  --color-brand-blue-300: #81C5FF;
+  --color-brand-blue-400: #4F9DFF;
+  --color-brand-blue-500: #2872FF;
+  --color-brand-blue-600: #0445FF;
+  --color-brand-blue-700: #0043FF;
+  --color-brand-blue-800: #003BE2;
+  --color-brand-blue-900: #0B36A4;
+  --color-brand-blue-950: #071E5F;
+
+  --color-brand-lime-50: #FDFFE4;
+  --color-brand-lime-100: #FAFFC5;
+  --color-brand-lime-300: #E4FF54;
+  --color-brand-lime-400: #D4FB20;
+  --color-brand-lime-500: #CBFC01;
+  --color-brand-lime-600: #8CB400;
+  --color-brand-lime-700: #6A8902;
+  --color-brand-lime-800: #546B09;
+  --color-brand-lime-900: #465A0D;
+  --color-brand-lime-950: #243300;
+
+  --color-brand-gray-50: #F5F5F6;
+  --color-brand-gray-100: #E5E6E8;
+  --color-brand-gray-200: #CED0D3;
+  --color-brand-gray-300: #ABAEB5;
+  --color-brand-gray-400: #82868E;
+  --color-brand-gray-500: #666973;
+  --color-brand-gray-600: #585A62;
+  --color-brand-gray-700: #4B4C53;
+  --color-brand-gray-800: #424348;
+  --color-brand-gray-900: #3A3B3F;
+  --color-brand-gray-950: #242528;
+
+  --font-poppins: var(--font-poppins);
+  --font-satoshi: var(--font-satoshi);
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground: #242528;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-satoshi), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-poppins), sans-serif;
 }
